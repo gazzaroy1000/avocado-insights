@@ -1,0 +1,106 @@
+/* Mobile First View: */
+
+h2 {
+	display: flex;
+	font-size: 28px;
+	/* Larger font size */
+	color: #704012;
+	/* Dark avocado color */
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #704012;
+	/* Underline with a thick border */
+}
+
+article {
+	background-color: #ddd48f;
+	color: #704012;
+	font-size: 120%;
+	padding: 0 10px;
+}
+
+article a {
+	color: #4B3C35;
+	padding: 5px;
+}
+
+/* Change the color of article links on hover using mouse */
+article a:hover {
+	background-color: #E3DFDE;
+	color: #4B3C35;
+}
+
+
+/* Change the color of article links on focus using tab key */
+article a:focus {
+	background-color: white;
+	color: #4B3C35;
+	outline: none;
+}
+
+#main_image {
+	max-width: 100%;
+	/* Ensures the image doesn't overflow its container */
+	height: auto;
+	/* Maintains the aspect ratio */
+	display: block;
+	margin: 0 auto;
+	/* Centers the image horizontally */
+	width: 56%;
+	/* You can adjust this to control the size */
+}
+
+.container {
+	background-color: #704012;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+	font-size: 120%;
+	color: #cda989;
+	width: 90%;
+	max-width: 800px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	/* Centers the container */
+}
+
+body {
+	background: linear-gradient(to right,
+			#4a7337 0%, #4a7337 10%,
+			/* Dark Green */
+			#6b8c21 10%, #6b8c21 20%,
+			/* Light Green */
+			#ddd48f 20%, #ddd48f 80%,
+			/* Beige */
+			#6b8c21 80%, #6b8c21 90%,
+			/* Light Green */
+			#4a7337 90%, #4a7337 100%
+			/* Dark Green */
+		);
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
+	main {
+		display: flex;
+	}
+
+	aside {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		float: left;
+		justify-content: center;
+		width: 30%;
+	}
+
+	section {
+		display: inline;
+		float: right;
+		width: 70%;
+	}
+
+}

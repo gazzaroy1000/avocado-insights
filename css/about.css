@@ -1,0 +1,82 @@
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #cda989;
+}
+
+p {
+  font-size: 18px;
+  color: #cda989;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* Stacks containers vertically */
+  gap: 20px;
+  /* Adds space between the containers */
+  align-items: center;
+  /* Centers the containers horizontally */
+}
+
+/* Styling for the containers */
+.container {
+  background-color: #704012;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  max-width: 800px;
+  /* Limits the width of the containers */
+  width: 100%;
+  /* Ensures the container is responsive */
+  box-sizing: border-box;
+  /* Makes padding and borders part of the total width */
+}
+
+/* Styling for links inside containers */
+.container a {
+  color: #cda989;
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+.container a:hover {
+  background-color: #4B3C35;
+  color: #E3DFDE;
+}
+
+/* Focus effect for links */
+.container a:focus {
+  background-color: #4B3C35;
+  color: #E3DFDE;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(to right,
+      #4a7337 0%, #4a7337 10%,
+      /* Dark Green */
+      #6b8c21 10%, #6b8c21 20%,
+      /* Light Green */
+      #ddd48f 20%, #ddd48f 80%,
+      /* Beige */
+      #6b8c21 80%, #6b8c21 90%,
+      /* Light Green */
+      #4a7337 90%, #4a7337 100%
+      /* Dark Green */
+    );
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  main {
+    grid-template-areas:
+      '.     area3 '
+      'area2 area3 '
+      'area2 area3 ';
+  }
+
+}
